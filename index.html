@@ -14,14 +14,18 @@
     />
     <link rel="stylesheet" href="main.css" />
     <script src="App.js"></script>
-    <title>BookStore</title>
+    <title>Margaret Farmer</title>
   </head>
   <!-- Make website responsive for all screens and devices -->
   <body>
-    <header></header>
+    <header>
+      <!-- Don't forget the navigation bar also the media queries in CSS-->
+    </header>
     <section>
-      <h1>This Is A Header tag</h1>
-      <p>This is a paragraph</p>
+      <br />
+      <br />
+      <h1>This Is A Header Tag</h1>
+      <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vel dolores
         vero, quibusdam reprehenderit cum nam asperiores nobis officia saepe
@@ -29,7 +33,53 @@
         blanditiis eveniet! Possimus itaque excepturi, cum perferendis hic
         asperiores explicabo libero quisquam!
       </p>
+      <br />
+      <br />
     </section>
+    <!--This is the container class and id for the form in CSS-->
+    <div class="container" id="form">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" />
+    </div>
+    <!--Line break seperaret elements-->
+    <br />
+    <div class="container" id="form">
+      <!--This is a label for the inputs-->
+      <label for="lname">Last Name</label>
+      <!--This is a input that is connected to the label-->
+      <input type="text" id="lname" name="lname" />
+    </div>
+    <br />
+    <div class="container" id="form">
+      <label for="date">DOB</label>
+      <input type="date" id="date" name="date" />
+    </div>
+    <br />
+    <div class="container" id="form">
+      <label for="text">Male</label>
+      <input type="radio" id="MaleorFemale" name="gender" />
+      <label for="radio">Female</label>
+      <input type="radio" id="Female" name="gender" />
+      <label for="radio" id="Non-Binary">Non-binary</label>
+      <input type="radio" id="Non-Binary" name="gender" />
+    </div>
+    <br />
+    <div class="container" id="form">
+      <label for="email"> Email</label>
+      <input type="email" id="email" name="email" />
+    </div>
+    <br />
+    <div class="container" id="form">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+    </div>
+    <br />
+    <div class="container" id="form">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+    </div>
+    <br />
+    <br />
     <footer>
       <!-- remember to add a copyright, location, contact info, & other directories. -->
     </footer>
