@@ -36,4 +36,4 @@ Look for alternative ways to view the problem and identify
 innovative solutions to the problem statement you’ve
 created. Challenge Assumptions and Create Ideas.
 
-**Stage 3**: Included with this lesson is a powerpoint presentation and
+**Stage 3**: Included with this lesson is a powerpoint presentation and pdf of the ideas.
