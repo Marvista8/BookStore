@@ -53,12 +53,26 @@ body {
   }
   
   button {
-      padding: 15px 25px;
-      margin-left:  80px;
-      margin-bottom: 100px;
-      color: white;
-      background-color: #05122c;
+  padding: 15px 25px;
+  margin-left:  80px;
+  margin-bottom: 100px;
+  color: white;
+  background-color: #05122c;
   }
+/* This is for the contact page*/
+.Hero {
+ display: block;
+ width: 100%;
+ height: auto;
+}
+
+.hero-img {
+  display: inline;
+  height: 600px;
+  width: 1920px;
+  max-width: 100%; 
+}
+
 
 /* login styling*/
 after { clear: both; }
@@ -183,10 +197,21 @@ after { clear: both; }
 }
  /*Removed flexbox queries*/
  .Display-text {
+  font-weight: 400;
    text-align: center;
    margin-right: 4.2rem;
    margin-top: 2.5rem;
    font-size: 2.5em;
+ }
+ .subhead {
+   text-align: center;
+   font-size: 1.4em;
+ }
+ .contact {
+   font-weight: 300;
+   width: 100%;
+   background-color: #ebb698;
+   padding: 5rem 0;
  }
 
 h1 {
@@ -211,7 +236,37 @@ h1 {
     margin-top: -250px;
     margin-right: 20px;
 }
+/*This is for the contact form submission*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
 
+input[type=submit] {
+  background-color: #163470;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #163470;
+  color: white;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
   /*Media queries for responsiveness*/
   @media screen and (max-width: 1200px) {
     .topnav a:not(:first-child) {display: none;}
