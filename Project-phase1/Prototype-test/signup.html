@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"defer></script>
+    <title>Spanios</title>
+</head>
+<div>
+    <!-- The Navigation menu bar -->
+    <div class="topnav" id="Topnav">
+        <svg onclick="location.href='/index.html' " class="logo" xmlns="http://www.w3.org/2000/svg" width="71" height="45" viewBox="0 0 71 45"><defs><style>.a{fill:#fff;stroke:rgba(0,0,0,0);font-size:32px;font-family:SegoeUI-Bold, Segoe UI;font-weight:700;}</style></defs><text class="a" transform="translate(1 36)"><tspan x="0" y="0">logo</tspan></text></svg>
+        <a href="/index.html">Home</a>
+        <a href="/books.html">Books</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--This is the Sign up page information to be stored in local storage to create user profile-->
+    <div>
+        <h1 class="Display-text">Sign Up </h1>
+    </div>
+    
+    <div class="login">
+        <form class="login-form">
+             <label for="name" name="fname" >First name</label>
+             <input type="text" id="fname">
+            
+             <label for="name" name="lname" >Last name</label>
+             <input type="text" id="lname">
+
+            <label for="login" name="email">Email</label>
+            <input type="email" id="email" aria-required="true">
+
+            <label for="passwords" name="password">Password</label>
+            <input type="password" id="pswd" aria-required="true">
+
+            <input type="submit" value="Sign up" onclick="store()">
+        </form>
+    </div>
+</body>
+</html>

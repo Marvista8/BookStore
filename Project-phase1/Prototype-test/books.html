@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/index.js"defer></script>
+    <title>Spanios</title>
+</head>
+<body>
+        <div class="topnav" id="Topnav">
+        <svg onclick="location.href='/index.html' " class="logo" xmlns="http://www.w3.org/2000/svg" width="71" height="45" viewBox="0 0 71 45"><defs><style>.a{fill:#fff;stroke:rgba(0,0,0,0);font-size:32px;font-family:SegoeUI-Bold, Segoe UI;font-weight:700;}</style></defs><text class="a" transform="translate(1 36)"><tspan x="0" y="0">logo</tspan></text></svg>
+            <a href="/index.html" onclick="document.getElementsByClassName()">Home</a>
+            <a href="/books.html" class="active">Books</a>
+            <a href="/contact.html">Contact</a>
+            <a href="/about.html">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="container">
+            <h1 class="Display-text">
+              Enter Book Information  <i class="fa fa-barcode" aria-hidden="true"></i>
+        </div> 
+
+        <!--This is just resuing the code styling  from the sign up-->
+        <div class="login">
+            <form class="login-form book-menu" id="book-List">
+                <label for="title" class="fname">Title</label>
+                <input type="text" placeholder="Title"  id="title">
+
+                <label for="author" class="lname">Author</label>
+                <input type="text" placeholder="Author" id="author">
+
+                <label for="date" class="lname">Date</label>
+                <input type="date" class="date" id="year">
+                    
+                <label for="genre" class="lname">Genre</label>
+                <select name="genre" id="genreS" aria-placeholder="Genre">
+                    <option value="">Art</option>
+                    <option value="">Academic</option>
+                    <option value="">Atheletics</option>
+                    <option value="">Comedy</option>
+                    <option value="">Dramas</option>
+                    <option value="">Horror</option>
+                    <option value="">History</option>
+                    <option value="">Biographies</option>
+                    <option value="">Natural Science</option>
+                </select>
+
+                <input type="submit" name="signin-btn" value="Add Book" onsubmit=""">
+            </form>
+        </div>
+</body>
+</html>

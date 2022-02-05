@@ -36,4 +36,21 @@ Look for alternative ways to view the problem and identify
 innovative solutions to the problem statement you’ve
 created. Challenge Assumptions and Create Ideas.
 
-**Stage 3**: Included with this lesson is a powerpoint presentation and pdf of the ideas.
+##Stage 3
+
+The Ideate stage is really for cementing ideas. Making sure everything makes sense and trying to hit the solutions to the problems. This is also the time to put egos aside and get a feel of what really needs to be done.
+
+**Stage 3**: Included with this lesson is a powerpoint presentation and pdf of the ideas. 
+
+##Stage 4
+
+Creating protoypes of the project is very hard to do but worth it. This is important because this can be the area were money can be wasted. It is also were experimentation can be done
+without too mush worry about the desing budget. This is the place to take risks.
+
+**Stage4**: Included is a prototype-test folder including the html and css as well as the powerpoint presentation.
+
+##Stage 5
+
+The testing stage is where good ideas come to die. No, but seriously. The dreams and design choices can really be tested in this stage. It is good to test and test and test again because sometimes solutions can be where you least expect it.
+
+**stage5** Included in this is the folder prototype-test folder that has all of the notes and files that were tested. there is also a powerpoint demonstration.
