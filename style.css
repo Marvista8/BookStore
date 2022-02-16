@@ -52,7 +52,7 @@ body {
     display: none;
   }
   
-  button {
+ .btn {
   padding: 15px 25px;
   margin-left:  80px;
   margin-bottom: 100px;
@@ -186,7 +186,7 @@ after { clear: both; }
   width: 50%;
   height: 40px;
   margin-top: 2rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
   border-radius: 3px;
   color: #05122c;
   cursor: pointer;
