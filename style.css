@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+  height: 95vh;
+}
 
 /*This is for the flexbox of the gridlist*/
 .flexbox {
@@ -159,6 +162,16 @@ after { clear: both; }
 }
 .demo span {
   padding-top: 8px;
+}
+
+label {
+padding: 2px;
+}
+
+.fboxitem {
+  background-color: white;
+  border: 1px solid black 0.2;
+  margin: 0 0 1rem 0;
 }
 
 .login-form input[type="date"] {
