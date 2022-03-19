@@ -1,35 +1,24 @@
 //this for the topnavigation. Uses the icon and responsive menu for all devices.
-
-function myFunction() {
-    let x = document.getElementById("Topnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
+function myFunction() {                          
+    let top = document.getElementById("Topnav");
+    if (top.className === "topnav") {
+      top.className += " responsive";
     } else {
-      x.className = "topnav";
+      top.className = "topnav";
     }
   }
 
-//This is for the Book Genres
+//Logo onclick goes to home page.
+const  myHome  = () => {
+  const homeBtn = document.querySelector('svg');
+  homeBtn.addEventListener('click', function(e) {
+    e.target = window.location.href='index.html';
+  })
+};
 
-let bookGenres = () => {
-  for( i=0; i < array.length; i++)
-    if(array[i] == 0) {
-        array[i] = newValue;
-        break;
-    }
-}   
-
-//Example array sort
-
-const numbers = [75, 8, 34, 26, 4, 0, 52] ;
-
-numbers.sort(compareNumbers) ;
-
-console.log(numbers) ;
-
-function compareNumbers (a, b) {
-  return a - b; 
-}
+const bookList = document.getElementsByClassName('fboxitem');
+const bookPhotos = document.getElementById('nPhotos');
+console.log('bookPhotos: ', bookPhotos);
 
 
 //Adds filter array
