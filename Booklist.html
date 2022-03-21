@@ -13,8 +13,8 @@
     <!-- The Navigation menu bar -->
     <div class="topnav" id="Topnav">
     <svg onclick="myHome()" class="logo" xmlns="http://www.w3.org/2000/svg" width="71" height="45" viewBox="0 0 71 45"><defs><style>.a{fill:#fff;stroke:rgba(0,0,0,0);font-size:32px;font-family:SegoeUI-Bold, Segoe UI;font-weight:700;}</style></defs><text class="a" transform="translate(1 36)"><tspan x="0" y="0">logo</tspan></text></svg>
-        <a href="index.html" class="active" onclick="">Home</a>
-        <a href="Booklist.html" >Books</a>
+        <a href="index.html" onclick="">Home</a>
+        <a href="booklist.html" class="active">Books</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -24,7 +24,7 @@
     <!--This is the search bar query that performs a find() and filter() on the books-->
     <div>
         <form id="search" class="search" action="">
-            <input id="search-bar" onkeyup="bookSearch()" type="text" placeholder="search" pattern="['A-Za-z']{.5,}" title="Please provide a book title" >
+            <input id="search-bar" type="text" placeholder="search" pattern="['A-Za-z']{.5,}" title="Please provide a book title" >
             <button id="searchBtn">submit</button>
         </form>
     </div>
