@@ -6,7 +6,7 @@ function myFunction() {
     } else {
       top.className = "topnav";
     }
-  }
+  };
 
 //Logo onclick goes to home page.
 const  myHome  = () => {
@@ -16,9 +16,22 @@ const  myHome  = () => {
   })
 };
 
-const bookList = document.getElementsByClassName('fboxitem');
-const bookPhotos = document.getElementById('nPhotos');
-console.log('bookPhotos: ', bookPhotos);
+let photoDivs = () => {
+  const bookList = document.getElementsByClassName('fboxitem');
+  const bookPhotos = document.getElementById('nPhotos');
+  console.log('bookPhotos: ', bookPhotos);
+  console.log('bookList: ', bookList);
+};
+
+const bookSearch = () => {
+  let input = document.getElementById('search-bar');
+  let filter = input.value.toLowerCase();
+  let bookContainer = document.getElementById
+  console.log('input: ', input);
+  console.log('filter: ', filter);
+}
+
+bookSearch();
 
 
 //Adds filter array

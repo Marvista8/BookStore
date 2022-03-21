@@ -23,128 +23,175 @@
     </div>
     <!--This is the search bar query that performs a find() and filter() on the books-->
     <div>
-        <form id="searchBar" class="search" action="">
-            <input type="text" placeholder="search" pattern="['A-Za-z']{.5,}" title="Please provide a book title" >
+        <form id="search" class="search" action="">
+            <input id="search-bar" onkeyup="bookSearch()" type="text" placeholder="search" pattern="['A-Za-z']{.5,}" title="Please provide a book title" >
             <button id="searchBtn">submit</button>
         </form>
     </div>
     <!--This is the container for the title-->
 
     <!--This is a book menu for the genre catagory types.-->
-    <div class="flexbox">
+    <div id="main-content" class="flexbox">
         <div class="fboxitem">
-            <img id="nPhotos" class="Roger"  src="https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Roger"  src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS8AuUSYjiN5OCs06O6HcZThaNYRH4kRXmlCrupXnQ20R3dXaeV6odJ2qzGLqgtYXF5cAMFAS8ia1ITSv40Pn0TBfu55OOQi_A1ZB73wBc&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names " for="img-photo1-1">Title: </label><br>
-            <label class="names " for="img-photo1-1">Author: </label><br>
-            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Title: The Book of Enoch</label><br>
+            <label class="names " for="img-photo1-1">Author: Enoch</label><br>
+            <label class="names " for="img-photo1-1">Genre: Religion</label><br>
             <label class="names " for="img-photo1-1">Price: $39.99</label>
        </div>
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Lisa nPhotos" src="https://cdn.pixabay.com/photo/2016/11/29/03/35/girl-1867092_960_720.jpg" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Lisa nPhotos" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQC4f-d_NA_ARLwGi1xIp5mZM7rsoPCUbhaCgr8hoB2D529C-tZhAJko0IbLapsXg90b2ApC7CrpmT4SgPuKBYnefkAq6oRzSyhzZkFekJ-&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-2">Lisa</label>
-            <label class="names " for="img-photo1-1">Title: </label><br>
+            <label class="names " for="img-photo1-1">Title: In An Aeroplane </label><br>
+            <label class="names " for="img-photo1-1">Author: Billy Whiskers </label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $87.00</label>
+       </div>
+
+        <div class="fboxitem">
+            <img id="nPhotos" class="Antonia" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTGPfGItdqJbpHOiqCZLCd2XA29N1jZf7hjNMkwZiUqr--qpRR5727304pXURNMU8Zqgl6v9s7Qxsc99ficAVLr5CyWjslk&usqp=CAE" alt="picture of man with beard staring">
+            <br>
+            <label class="names " for="img-photo1-1">Title: Three Muskateers </label><br>
+            <label class="names " for="img-photo1-1">Author: Dumas</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $24.00</label>
+       </div>
+
+        <div class="fboxitem">
+            <img id="nPhotos" class="Leslie" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTU2fMT0soOWgNPZFjWPBs3DwTGWWY-Asgq6t67t6O9a7vmx3hqJst4JNYKor-04Sv24psTA5GaybnC--_xM21ie20lHRjGOto5neKXe12T&usqp=CAE" alt="picture of man with beard staring">
+            <br>
+            <label class="names " for="img-photo1-1">Title: The Girl Who Escaped From Auschwitz</label><br>
             <label class="names " for="img-photo1-1">Author: </label><br>
             <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
             <label class="names " for="img-photo1-1">Price: $39.99</label>
-       </div>
-
-        <div class="fboxitem">
-            <img id="nPhotos" class="Antonia" src="https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909_960_720.jpg" alt="picture of man with beard staring">
-            <br>
-            <label class="names" for="img-photo1-3">Antonia</label>
-       </div>
-
-        <div class="fboxitem">
-            <img id="nPhotos" class="Leslie" src="https://cdn.pixabay.com/photo/2020/03/03/16/54/female-4899179_960_720.jpg" alt="picture of man with beard staring">
-            <br>
-            <label class="names" for="img-photo1-4">Leslie</label>
        </div>      
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Sheyraya" src="https://cdn.pixabay.com/photo/2017/04/01/21/06/portrait-2194457_960_720.jpg" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Sheyraya" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQa9N9nIUXdKfN3ZIqPnHd1cM34PB3pWlpxaVBFNHuCuO5wJ7cK5bJKEv1gm-zY04fciegBy6UQZYvuzrFeHqXhu9SoQG3Y1pGKetQMwUQBWLUQK0ABq7G2&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-5">Sheyraya</label>
+            <label class="names " for="img-photo1-1">Title: Edgar Allan Poe Collections</label><br>
+            <label class="names " for="img-photo1-1">Author: Edgar Allan Poe</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $18.99</label>
        </div>        
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Brian" src="https://cdn.pixabay.com/photo/2015/08/05/04/25/people-875617_960_720.jpg" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Brian" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQbScnz9sJ5ljGMvgxxjWMHYPG9t9_8VKGHTIkqO7SAVG9F8qnBNhapPWJ8gaRgYDCYHJIVte89oUiAagqWvHYNoih2wBm2&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-6">Brian</label>
+            <label class="names " for="img-photo1-1">Title: Oscar Wilde Collections </label><br>
+            <label class="names " for="img-photo1-1">Author: Oscar Wilde</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $21.99</label>
        </div>                      
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Anthony" src="https://cdn.pixabay.com/photo/2017/11/02/14/36/model-2911363_960_720.jpg" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Anthony" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT6yKkW9Hb9UAi7NHOFLWhfDHEN5NVMJDFq0GTqHSgCRn7lbfmxSPPBJs3wTd4kdhqnrR8LsMekSfvk0NJ6GkcfELzd8-JT&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-7">Anthony</label>
+            <label class="names " for="img-photo1-1">Title: War and Peace</label><br>
+            <label class="names " for="img-photo1-1">Author: Leo Tolstoy</label><br>
+            <label class="names " for="img-photo1-1">Genre: Non-Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $60.00</label>
        </div>     
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Bonnie" src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Bonnie" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-8">Bonnie</label>
+            <label class="names " for="img-photo1-1">Title: The Great Gatsby</label><br>
+            <label class="names " for="img-photo1-1">Author: F Scott Fitzgerald</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: 40.00</label>
        </div>                      
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Joseph" src="https://images.pexels.com/photos/1813922/pexels-photo-1813922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Joseph" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Grapes_of_Wrath_%281939_1st_ed_cover%29.jpg" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-9">Joseph</label>
+            <label class="names " for="img-photo1-1">Title: The Grapes of Wrath</label><br>
+            <label class="names " for="img-photo1-1">Author: John Steinbeck</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $39.99</label>
        </div>     
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Hamilton" src="https://images.pexels.com/photos/1808993/pexels-photo-1808993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Hamilton" src="https://www.gutenberg.org/files/1342/1342-h/images/cover.jpg" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-10">Hamilton</label>
+            <label class="names " for="img-photo1-1">Title: Pride and Predjudice</label><br>
+            <label class="names " for="img-photo1-1">Author: Jane Austen</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $26.00</label>
        </div>  
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Patrick" src="https://images.pexels.com/photos/5543340/pexels-photo-5543340.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Patrick" src="https://www.spbooks.com/1224-large_default/oliver-twist.jpg" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-11">Patrick</label>
+            <label class="names " for="img-photo1-1">Title: The adventures of Oliver Twist</label><br>
+            <label class="names " for="img-photo1-1">Author: Charles Dickens</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $99.99</label>
        </div>                      
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Monica" src="https://images.pexels.com/photos/6599491/pexels-photo-6599491.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Monica" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQPu8kKU6slfeWHonqXsOsp3Czo_uFlbva8W_T_PaPwdC21RmtVN7Q_9Q3IgfwvLDq4i-E8R3Zvmj-PhH6n4mZg30afbuD-AV3RNhbjl4c&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-12">Monica</label>
+            <label class="names " for="img-photo1-1">Title: Great Men and Women</label><br>
+            <label class="names " for="img-photo1-1">Author: Charles Morwe</label><br>
+            <label class="names " for="img-photo1-1">Genre: Biography</label><br>
+            <label class="names " for="img-photo1-1">Price: $130.00</label>
        </div>                      
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Cassie" src="https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Cassie" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRXI9ovgBDbNmo3WEL_Nd3pRvNjbgpccAytG5fqlZD2kVEmZdWCUBXmaim7qSK7EgQ0Owo3Y2lIGZTvsagH1xHwCKI-d3iv2UIbPDsekHM87u3B1yUlDflW&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-13">Cassie</label>
+            <label class="names " for="img-photo1-1">Title: Celtic Mythology </label><br>
+            <label class="names " for="img-photo1-1">Author: Philip Freeman</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $15.99</label>
        </div>                     
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Chloe" src="https://images.pexels.com/photos/1808785/pexels-photo-1808785.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Chloe" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRuWIIy671tzzADGDBl69Rk8hN0s_YGYkU-UGZQ0x3OFX9Hss0LsBHLPxl30qRCuYkyTyMcZsrN7Tt_KMmX83VQCak9ie5tHWiDV1L4O3O_piG5cP6oJATzaw&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-14">Chloe</label>
+            <label class="names " for="img-photo1-1">Title: A Court of Thorns and Roses</label><br>
+            <label class="names " for="img-photo1-1">Author: Sarah J. Maas</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $72.99</label>
        </div>                      
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Kumar" src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?cs=srgb&dl=pexels-italo-melo-2379005.jpg&fm=jpg" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Kumar" src="https://i.etsystatic.com/6944352/r/il/b32e3e/3583232721/il_794xN.3583232721_6fi8.jpg" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-15">Kumar</label>
+            <label class="names " for="img-photo1-1">Title: Revolution Franciase</label><br>
+            <label class="names " for="img-photo1-1">Author: Alfred Rastoul</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $120.00</label>
        </div> 
 
        <div class="fboxitem">
-            <img id="nPhotos" class="Cassie" src="https://images.pexels.com/photos/2709388/pexels-photo-2709388.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Cassie" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTn43Ekife6S7A9fhbBpgajchHpHiOICohgk9meA7qrKOyfztZhIAo9BRsF180fBq6GYksGhrMfrGnXAEDaiI7U2YMIrs3PB34PnougIug&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-16">Cassie</label>
+            <label class="names " for="img-photo1-1">Title: Lucy Carmichael</label><br>
+            <label class="names " for="img-photo1-1">Author: Margaret Kennedy</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $48.00</label>
         </div>                     
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Chloe" src="https://images.pexels.com/photos/1808785/pexels-photo-1808785.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Chloe" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRNjLFeI55Fnl5slIj1yug4WS7Tpl229J1pfXz5u8jaOTMOnZwnqnKNEHxdHa2o_XG7lA-B1JcGxcrubOQZXOzIm3vI4pFGUWwCETt30VLN0QD2ZvnenV0WyQ&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-17">Chloe</label>
+            <label class="names " for="img-photo1-1">Title: Antiques Fire Sale</label><br>
+            <label class="names " for="img-photo1-1">Author: Brbara Allan</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $140.00</label>
         </div>                      
 
         <div class="fboxitem">
-            <img id="nPhotos" class="Kumar" src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?cs=srgb&dl=pexels-italo-melo-2379005.jpg&fm=jpg" alt="picture of man with beard staring">
+            <img id="nPhotos" class="Kumar" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQn15mDc8Ui6SUS3Fj1QCWpuhi1a4rAL0VG7dArMoY8xEhWxuicZmOmb161wDoK73OGV31G5TD7gNE4bmtCgNmNmzz-21yWq3SBCoqXag8&usqp=CAE" alt="picture of man with beard staring">
             <br>
-            <label class="names" for="img-photo1-18">Kumar</label>
+            <label class="names " for="img-photo1-1">Title: Love Death and Rare Books</label><br>
+            <label class="names " for="img-photo1-1">Author: Robert Hellenga</label><br>
+            <label class="names " for="img-photo1-1">Genre: Fiction</label><br>
+            <label class="names " for="img-photo1-1">Price: $33.00</label>
         </div>                                           
     </div>
 </body>
