@@ -24,11 +24,24 @@ let photoDivs = () => {
 };
 
 const bookSearch = () => {
-  let input = document.getElementById('search-bar');
-  let filter = input.value.toLowerCase();
-  let bookContainer = document.getElementById
-  console.log('input: ', input);
-  console.log('filter: ', filter);
+let input, filter, div, books, labels, i, bookList, txtValue;
+input = document.getElementById('search-bar');
+filter = input.style.display.toLowerCase()
+div = document.getElementById('main-content');
+books = document.getElementsByClassName('fboxitem');
+labels = document.getElementsByTagName('label');
+console.log('input: ', input, 'filter: ',filter, 'div: ',div, 'books: ', books, 'labels: ', labels);
+
+  for (i = 0; i < books.length; i++) {
+    bookList = books[0];
+    txtValue = bookList.textContent || bookList.innerHTML;
+    console.log(txtValue);
+    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+      books[i].style.display = " ";
+    } else {
+      books[i].style.display = "none";
+    }
+  }
 }
 
 bookSearch();
