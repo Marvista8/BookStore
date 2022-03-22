@@ -5,32 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="index.js"defer></script>
     <title>Spanios</title>
 </head>
 <body>
-    <!-- The Navigation menu bar -->
-    <div class="topnav" id="Topnav">
-    <svg onclick="myHome()" class="logo" xmlns="http://www.w3.org/2000/svg" width="71" height="45" viewBox="0 0 71 45"><defs><style>.a{fill:#fff;stroke:rgba(0,0,0,0);font-size:32px;font-family:SegoeUI-Bold, Segoe UI;font-weight:700;}</style></defs><text class="a" transform="translate(1 36)"><tspan x="0" y="0">logo</tspan></text></svg>
-        <a href="index.html" onclick="">Home</a>
-        <a href="booklist.html" class="active">Books</a>
-        <a href="contact.html">Contact</a>
+    <div id="mySidenav" class="sidenav">
+        <img class="logo" onclick="myHome()" src="src/images/Spanios.svg" alt="">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="booklist.html">Books</a>
         <a href="about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <!--This is the search bar query that performs a find() and filter() on the books-->
-    <div>
-        <form id="search" class="search" action="">
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">open</span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+        <!--This is the search bar query that performs a find() and filter() on the books-->
+        <div>
+            <form id="mySearch" class="search" action="">
             <input id="search-bar" type="text" placeholder="search" pattern="['A-Za-z']{.5,}" title="Please provide a book title" >
-            <button id="searchBtn">submit</button>
-        </form>
-    </div>
-    <!--This is the container for the title-->
+            <button id="searchBtn">search</button>
+            </form>
+        </div>
+        <!--This is the container for the title-->
 
-    <!--This is a book menu for the genre catagory types.-->
+        <!--This is a book menu for the genre catagory types.-->
     <div id="main-content" class="flexbox">
         <div class="fboxitem">
             <img id="nPhotos" class="Roger"  src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS8AuUSYjiN5OCs06O6HcZThaNYRH4kRXmlCrupXnQ20R3dXaeV6odJ2qzGLqgtYXF5cAMFAS8ia1ITSv40Pn0TBfu55OOQi_A1ZB73wBc&usqp=CAE" alt="picture of man with beard staring">
@@ -194,5 +198,6 @@
             <label class="names " for="img-photo1-1">Price: $33.00</label>
         </div>                                           
     </div>
+
 </body>
 </html>

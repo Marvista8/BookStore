@@ -1,0 +1,265 @@
+/* Universal Stylings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+ margin: 0;
+}
+
+
+/* Navigation Stylings */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(0, 1, 15); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+  /* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  background-color: #fa4b77;
+}
+ /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+ /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+span {
+  color: #f56571;
+  font-size: 1.8em;
+
+}
+
+  .logo {
+    margin-left: 32px;
+    width: 90px;
+    height: 75px;
+} 
+.fa-fa-bars {
+    background-color: #05122c;
+    color: #aaffcd;
+  }
+/* Backgrounds */
+.color-pop {
+  background-color: #05122c;
+}
+.link-btn {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+:root {
+	--primary-color: #05163a;
+}
+.content {
+	z-index: 2;
+}
+.showcase {
+	height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('src/production\ ID_4873467.mp4') no-repeat center
+		center/contain;
+}
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(44, 1, 21, 0.35);
+	position: absolute;
+}
+.btn1 {
+  margin-left: 8rem;
+  padding: 18px 45px;
+  font-size: 1.3em;
+  background-color: rgba(3, 35, 110, 0.5);
+  color: #f56571;
+  font-weight: 100;
+  border-radius: 5px;
+  border: #021569;
+}
+.link-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    background: var(--primary-color);
+    background-color: rgba(2, 22, 27, 0.5);
+    font-family: montserrat;
+    font-weight: 400;
+    font-size: 1.3em;
+    color: #fff;
+    border-radius: 5px;
+    border: solid rgb(36, 12, 1) 1px;
+    margin-top: 25px;
+    opacity: 0.9;
+}
+.link-btn:hover {
+	  transform: scale(1.16);
+    background-color: #d1313e;
+}
+.btn1:hover:hover {
+  transform: scale(1.18);
+  background-color: #57f18a;
+  color: #05122c;
+}
+.active {
+  background-color: #061a69;
+}
+.sidenav:hover {
+  background-color: #db2250;
+}
+/* Text Stylings */
+.Display-text {
+    font-family: carbon, sans-serif;
+    text-shadow: 10px 8px#010f0a;
+    color: #95ffac;
+    font-weight: 900;
+	  font-size: 6.5em;
+	  line-height: 2;
+	  margin-bottom: 1.2rem;
+}
+.display-text2 {
+    font-family: carbon, sans-serif;
+    font-size: 4em;
+    padding: 14rem 0rem 1rem 8rem;
+}
+.display-text3 {
+  font-family: montserrat, sans-serif;
+  font-weight: 200;
+   font-size: 1.6em;
+   color: white;
+   padding-left: 8rem;
+   margin-bottom: 4rem;
+}
+.text-color {
+  color: #f56571;
+}
+.Subhead {
+    font-family: Montserrat, sans-serif;
+    background-color: rgba(2, 22, 27, 0.35);
+    border-radius: 12px;
+    padding: 1rem ;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+/* Flex Containers */
+.even-cols {
+  display: flex;
+}
+.even-cols > * {
+  flex-basis: 100%;
+}
+/* Image Stylings */
+.photo1 {
+  width: 50vw;
+  height: 95vh;
+  max-width: 100%;
+}
+
+/* Form Stylings */
+#mySearch input[type=text] {
+  width: 80%;
+  margin-left: 6rem;
+}
+#searchBtn {
+  padding: 10px 24px;
+  background-color: #05122c;
+  border: 1px solid #05122c;
+  color: white;
+  font-size: 0.9em;
+  font-family: Montserrat, sans-serif;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .content {
+        font-size: 0.6em;
+    }
+    .showcase {
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        padding: 0 20px;
+    }
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 360px) {
+  .even-cols {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+  .col {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    margin: 1rem;
+  }
+  .photo1 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+  

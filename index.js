@@ -8,13 +8,34 @@ function myFunction() {
     }
   };
 
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.7)";
+  }
+  
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+  }
+
 //Logo onclick goes to home page.
 const  myHome  = () => {
-  const homeBtn = document.querySelector('svg');
+  const homeBtn = document.querySelector('img');
   homeBtn.addEventListener('click', function(e) {
     e.target = window.location.href='index.html';
   })
 };
+
+const mainPage = () => {
+  let mainMenu = addEventListener('click', function(e) {
+    console.log(mainMenu);
+    mainMenu = e.target;
+    mainMenu = this.window.location.href='home.html';
+  });
+}
 
 // let photoDivs = () => {
 //   const bookList = document.getElementsByClassName('fboxitem');
@@ -72,16 +93,3 @@ const  myHome  = () => {
 // textValue = searchBooks.value.toLowerCase();
 // console.log('searchBooks: ', searchBooks, 'books: ', books);
 
-
-
-//Adds filter array
-
-//Adds Books to the list
-
-//Adds permission prompt for deletion
-
-//Adds delete books with permission
-
-//Adds hide books from list
-
-//This JavaScript is specifice to the book search query
