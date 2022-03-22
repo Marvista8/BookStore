@@ -11,17 +11,32 @@
     <title>Spanios</title>
 </head>
 <body>
-    <!-- The Navigation menu bar -->
+    <div id="mySidenav" class="sidenav">
+        <img class="logo" onclick="myHome()" src="src/images/Spanios.svg" alt="">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="booklist.html">Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">open</span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        <section class="showcase">
+            <div class="video-container">
+                <video src="src/images/production ID_4873467.mp4" autoplay muted loop></video>
+            </div>
+            <div class="content">
+                <h1 class="Display-text">Find Your Story</h1>
+                <h3 class="Subhead">Antique Books From All Over The World Waiting To Be Explored</h3>
+                <a class="link-btn" onclick="mainPage() " href="#" class="btn">Find Out</a>
+            </div>
+        </section>
+      </div>
+        <!-- The Navigation menu bar -->
     </div>
-    <section class="showcase">
-        <div class="video-container">
-            <video src="src/images/production ID_4873467.mp4" autoplay muted loop></video>
-        </div>
-        <div class="content">
-            <h1 class="Display-text">Find Your Story</h1>
-            <h3 class="Subhead">Antique Books From All Over The World Waiting To Be Explored</h3>
-            <a class="link-btn" onclick="mainPage() " href="#about" class="btn">Find Out</a>
-        </div>
-    </section>
 </body>
 </html>
