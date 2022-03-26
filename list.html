@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <title>Spanios</title>
+    <link href="styles.css" rel="stylesheet" />
+    <title>List</title>
 </head>
+<script src="scripts.js"></script>
+<script src="processes.js"></script>
+<script src="fileReader.js"></script>
+<script src="importBookListCl.js"></script>
+
 <body>
-     <!-- The Navigation menu bar -->
-     <div class="topnav" id="Topnav">
-        <svg onclick="myHome()" class="logo" xmlns="http://www.w3.org/2000/svg" width="71" height="45" viewBox="0 0 71 45"><defs><style>.a{fill:#fff;stroke:rgba(0,0,0,0);font-size:32px;font-family:SegoeUI-Bold, Segoe UI;font-weight:700;}</style></defs><text class="a" transform="translate(1 36)"><tspan x="0" y="0">logo</tspan></text></svg>
-            <a href="index.html" class="active" onclick="">Home</a>
-            <a href="Booklist.html" >Books</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-        </div>
-        <div class="container">
-            <h1>Book Information</h1>
-        </div>
+
+    <div id="userDiv"></div>
+    <h1>List</h1>
+    <div>
+        Select a file: <input type="file" id="myFile">
+        <!--<button onclick='processFile()'>Process</button>-->
+        <button onclick='importBookList()'>Process</button>
+        <table id="myTable"></table>
+    </div>
+    <div id="bookList">
+        <table id="bookListTable" class="styled-table"></table>
+    </div>
 </body>
+<script>
+    //Adds the user's Infor to the userDiv
+    doUserInfo();
+</script>
+
 </html>
