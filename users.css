@@ -5,57 +5,59 @@
 
 .flex {
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.float {
-    float: right;
+.flex * > {
+    flex-basis: 1 1 10em;
 }
+
 
 #userDiv {
-    background-color: rgba(5, 4, 46, 0.651);
-    color: white;
-    font-size: 1.4em;
-    font-weight: 200;
+    background-color: rgba(7, 3, 41, 0.63);
+    color: rgb(248, 252, 255);
     font-family: 'Montserrat', sans-serif;
-    padding: 40px 80px;
-    width: 50%;
-    margin: auto;
+    font-weight: 300;
+    font-size: 1.2em;
+    padding-left: 3.5rem;
+    padding-bottom: 1.4rem;
+    margin: 1rem;
 }
 
-img {
-    float: right;
-    border-radius: 100%;
-    width: 50%;
-    height: 70%;
+
+.avatar-photo {
     max-width: 100%;
+    margin: auto;
+    padding: 1rem;
 }
+
 .Title {
-    padding-top: 2rem;
-    font-size: 3.5em;
-    font-weight: 300;
-    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 400;
+  
+}
+
+.btns {
+    padding: 1rem;
     margin: auto;
 }
 
 button {
-    width: 25%;
-    margin-left: 26rem;
-    margin-top: 2rem;
-    padding: 10px;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 0.5rem;
+    background-color: rgba(9, 3, 43, 0.993);
+    color: rgba(116, 255, 213, 0.781);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    margin: 1rem;
 }
 
-#text {
-   font-size: 1.2em;
-   padding-left: 10px;
-   padding-right: 440px;
-   margin-top: -18rem;
-   margin-left: 53rem;
-}
-
-@media screen and (max-width: 450px) {
-   .flex .col {
-        display: flex;
-        flex-flow: column wrap;
-    }
+button:hover {
+    background-color: rgba(29, 9, 112, 0.993);
+    transform: scale(1.1);
 }
