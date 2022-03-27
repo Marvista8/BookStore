@@ -6,7 +6,7 @@ var doLogOut = () => {
   console.dir(JSON.parse(localStorage.getItem(siteUsersKey)));
   console.dir(JSON.parse(localStorage.getItem(loggedInUserKey)));
   console.dir(JSON.parse(localStorage.getItem(bookListKey)));
-  window.location.href = "index.html";
+  window.location.href = "user.html";
 };
 
 

@@ -9,7 +9,7 @@ var submitLogin = (e) => {
   let loginResult = doFormLogin(tbUserName.value, tbPassword.value);
   if (loginResult.ok) {
     e.preventDefault();
-    window.location.href = "index.html";
+    window.location.href = "user.html";
   } else {
     setLoginError(loginResult.message, true);
     e.preventDefault();
