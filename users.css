@@ -61,3 +61,39 @@ button:hover {
     background-color: rgba(29, 9, 112, 0.993);
     transform: scale(1.1);
 }
+
+#myFile {
+    width: 50%;
+    margin: auto;
+}
+
+.col1 {
+    width: 50%;
+    margin: auto;
+}
+
+#bookListTable th {
+    background-color: rgba(15, 4, 61, 0.993);
+    color: rgba(116, 255, 213, 0.781);
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+tr {
+    background-color: azure;
+    text-align: center;
+    padding: 25px;
+}
+
+#userDiv input[type=text] {
+   padding: 10px 14px;
+   width: 25%;
+
+}
+
